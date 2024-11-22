@@ -1,0 +1,36 @@
+name: Z-Wave JS UI Proxy
+version: "1.0.55"
+panel_icon: "mdi:z-wave"
+panel_title: Z-Wave JS UI Proxy
+slug: zwave-js-ui-proxy
+description: Proxy addon for Z-Wave JS UI
+url: "https://github.com/maxandcheeses/zwave-js-ui-proxy"
+startup: application
+boot: auto
+webui: "http://[HOST]:[PORT:3001]/"
+watchdog: "http://[HOST]:[PORT:3001]/"
+ingress: true
+ingress_port: 3001
+panel_admin: false
+host_network: false
+devices: []
+usb: false
+tmpfs: false
+full_access: false
+environment: {}
+options:
+  server: "http://zwavejs.local:3001"
+  proxy_pass_host: true
+  proxy_pass_real_ip: true
+schema:
+  server: "match(^https?://.+:\\d+$)"
+  proxy_pass_host: bool
+  proxy_pass_real_ip: bool
+services: []
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+map: []
