@@ -1,5 +1,5 @@
 name: Z-Wave JS UI Proxy
-version: "1.0.55"
+version: "1.0.56"
 panel_icon: "mdi:z-wave"
 panel_title: Z-Wave JS UI Proxy
 slug: zwave-js-ui-proxy
@@ -11,7 +11,7 @@ webui: "http://[HOST]:[PORT:3001]/"
 watchdog: "http://[HOST]:[PORT:3001]/"
 ingress: true
 ingress_port: 3001
-panel_admin: false
+panel_admin: true
 host_network: false
 devices: []
 usb: false
